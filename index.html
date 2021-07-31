@@ -53,6 +53,7 @@
         </div>
       </div>
     </header>
+    <!--Main central box-->
     <article id="mainArticle">
       <div class="main-title">
         <h1 class="txt-main">
@@ -68,7 +69,7 @@
         <div class="resume-header">
           <span class="resume-title">Resumo</span>
         </div>
-        <p>
+        <p class="resume-color">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
           vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis
           mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros
@@ -80,7 +81,7 @@
           leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque
           sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum.
           Etiam aliquam dictum nisl, vel aliquet enim accumsan sit ametl
-          accumsant...
+          accumsant...<span id="btn-open" class="open-resume">ver mais</span>
         </p>
       </div>
     </article>
@@ -122,11 +123,64 @@
         </div>
       </div>
     </nav>
-    <div id="siteAds">Ads</div>
+    <div id="siteAds">
+      <div class="btn-right-side">
+        <button class="download-btn">
+          <img
+            class="download-btn-icon"
+            src="assets/download.svg"
+            alt="icone de download"
+          />
+          <span class="download-btn-txt"> Download </span>
+        </button>
+        <button class="favorite-btn">
+          <img
+            class="favorite-icon"
+            src="assets/favorite-icon.svg"
+            alt="icone de estrela/favorito"
+          />
+        </button>
+        <button class="doi-btn">
+          <img class="doi-icon" src="assets/doi-icon.svg" alt="icone doi" />
+        </button>
+      </div>
+      <span class="quote-txt"> COMO CITAR ESSE TRABALHO? </span>
+
+      <div class="right-box">
+        <div class="details">
+          <span class="details-header"> Detalhes </span>
+        </div>
+
+        <div class="top-header-details">
+          <p>Tipo de Apresentação: <strong class="fade">Pôster</strong></p>
+          <p>Eixo temático: <strong class="fade">Alimentação e saúde (AS)</strong></p>
+          <p>Palavras-chaves: <strong class="fade">Alimentos funcionais, alimentação escolar</strong></p>
+        </div>
+
+        <div class="authors">
+          <p><strong class="fade">Autores:</strong></p>
+          <p>Galileo Galilei¹</p>
+          <p>Berta Lange de Morretes²</p>
+          <p>Isaac Newton³</p>
+          <p>Cesar Lattes¹</p>
+          <p>Stephen Hawking⁴</p>
+        </div>
+
+        <div class="institutes">
+          <p>¹Universidade Estadual de Campinas</p>
+          <p>²Universidade de São Paulo</p>
+          <p>³Instituto Nacional de Pesquisas Espaciais</p>
+          <p>⁴Universidade Federal do Rio de Janeiro</p>
+        </div>
+      </div>
+    </div>
 
     <!--Footer-->
     <footer id="pageFooter">
       <img src="assets/image-footer.png" />
     </footer>
+
+    <!--Scripts-->
+    <script src="scripts/script.js"></script>
   </body>
 </html>

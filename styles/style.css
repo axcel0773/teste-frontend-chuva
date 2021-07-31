@@ -16,6 +16,7 @@ body {
 :root {
   --title-orange: #ed7839;
   --title-resume-box: #4e4e4e;
+  --title-resume-txt: #5c5c5c;
   --background-orange: #ed7839;
   --background-sidemenu: #fdf1eb;
   --header-color: #fdf1eb;
@@ -29,9 +30,7 @@ body {
   --title-font-side: "Quicksand", sans-serif;
 }
 
-#siteAds {
-  background-color: gold;
-}
+/* Grid areas */
 #pageHeader {
   grid-area: header;
 }
@@ -48,8 +47,7 @@ body {
   grid-area: ads;
 }
 
-/* Side menu */
-
+/* Left Side menu */
 .logo-box {
   display: flex;
   justify-content: center;
@@ -174,6 +172,169 @@ nav a:hover {
   padding: 1px 5px;
   border-radius: 10px;
 }
+/* Right Sidebar box icons*/
+.btn-right-side {
+  display: flex;
+
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-around;
+}
+
+/* Right sidebar icons */
+.download-btn-icon {
+  display: flex;
+  padding: 6px;
+}
+
+.download-btn-txt {
+  display: flex;
+
+  padding: 6px 5px;
+
+  font: 500 16px var(--title-font);
+  color: white;
+}
+
+.download-btn {
+  display: flex;
+
+  align-self: center;
+
+  width: 120px;
+  height: 31px;
+
+  background: var(--background-orange);
+  border-style: none;
+  border-radius: 4px;
+}
+
+.favorite-btn {
+  display: flex;
+
+  width: 43px;
+  height: 31px;
+
+  background: var(--background-orange);
+  border-style: none;
+  border-radius: 4px;
+}
+
+.favorite-icon {
+  display: flex;
+
+  align-self: center;
+
+  padding: 5px;
+}
+
+.doi-btn {
+  display: flex;
+
+  width: 43px;
+  height: 31px;
+
+  background: var(--background-orange);
+  border-style: none;
+  border-radius: 4px;
+}
+
+.doi-icon {
+  display: flex;
+
+  align-self: center;
+
+  padding: 5px;
+}
+
+.quote-txt {
+  display: flex;
+  flex-direction: row;
+
+  align-content: center;
+  justify-content: center;
+
+  align-items: center;
+
+  padding-top: 10px;
+
+  font: 500 14px var(--title-font);
+  line-height: 25px;
+  color: var(--background-orange);
+}
+
+/* Right sidebar content*/
+.right-box {
+  border: 1px solid #ececec;
+  box-sizing: border-box;
+  border-radius: 3px;
+
+  overflow-y: scroll;
+
+  height: 439px;
+}
+
+/* Scrollbar sidebar content */
+::-webkit-scrollbar {
+  background: linear-gradient(13deg, #bfbfbf 16%, #bfbfbf 60%);
+  border-radius: 5px;
+
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.details {
+  display: flex;
+  background: var(--background-sidemenu);
+
+  padding: 10px 15px;
+  border: 1px solid #ececec;
+  border-bottom: none;
+}
+
+.details-header {
+  color: var(--title-resume-box);
+  font: 500 20px var(--title-font);
+
+  line-height: 25px;
+}
+
+.top-header-details,
+.authors,
+.institutes {
+  padding-left: 15px;
+  font-family: var(--title-font-side);
+}
+
+.top-header-details,
+.authors {
+  font-size: 14px;
+}
+
+.institutes {
+  font-size: 12px;
+  color: #5c5c5c;
+}
+
+strong {
+  color: #5c5c5c;
+}
 
 /* Main content */
 .main-title {
@@ -218,6 +379,17 @@ nav a:hover {
   font: 500 20px var(--title-font);
   color: var(--title-resume-box);
   line-height: 25px;
+}
+
+.resume-color {
+  font: 400 14px var(--title-font-side);
+  color: var(--title-resume-txt);
+}
+
+/* Button open resume */
+.open-resume {
+  color: var(--background-orange);
+  font-weight: 700;
 }
 
 footer {

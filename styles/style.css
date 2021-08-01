@@ -21,6 +21,7 @@ body {
   --background-sidemenu: #fdf1eb;
   --header-color: #fdf1eb;
   --sidemenu-color: #725c5c;
+  --content-color: #4d4d4d4d;
   --sidemenu-color-gradient: linear-gradient(180deg, #ffb354 0%, #ee7a3a 100%);
   --border-shadow: #e7e7e7;
   --background-color: #ffff;
@@ -393,6 +394,8 @@ strong {
 .open-resume {
   color: var(--background-orange);
   font-weight: 700;
+
+  cursor: pointer;
 }
 
 /* Discussion content */
@@ -429,7 +432,7 @@ strong {
 }
 
 .discussion-subtitle {
-  display:flex;
+  display: flex;
   margin-top: 15px;
 
   justify-content: center;
@@ -453,7 +456,6 @@ strong {
 
   justify-content: center;
 
-
   font: 400 14px var(--title-font-side);
   color: #595959;
   line-height: 19px;
@@ -462,7 +464,11 @@ strong {
 .btn-topic {
   display: flex;
 
+  width: 133px;
+  height: 32px;
+
   justify-content: center;
+  align-items: center;
 
   background: var(--sidemenu-color-gradient);
 
@@ -472,8 +478,70 @@ strong {
   border-style: none;
   border-radius: 4px;
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
 }
 
+/* Discussion sub-box */
+.question1,
+.question2 {
+  display: flex;
+ 
+  flex-direction: column;
+  align-items: flex-start;
+
+  margin: 15px 15px;
+  width: 1028px;
+
+  background: #ffffff;
+  border: 1px solid #e7e7e7;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.question-subject {
+  font: 700 16px var(--title-font-side);
+  color: var(--background-orange);
+
+  line-height: 20px;
+
+  padding: 0px 5px;
+
+}
+
+.question-author {
+  font: 500 12px var(--title-font);
+  color: var(--title-resume-txt);
+
+  padding: 0px 5px;
+  margin-top: -20px;
+}
+
+.question-txt {
+  font: 400 14px var(--title-font-side);
+
+  color: #4d4d4d;
+
+  padding: 0px 5px;
+}
+
+.question-footer {
+  display: flex;
+
+  align-items: center;
+}
+
+.question-footer i,
+.question-footer span {
+  padding: 5px;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 350;
+  font-size: 14px;
+  color: #757575;
+}
+
+
+/* Footer */
 footer {
   height: 170px;
   width: 95%;

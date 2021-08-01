@@ -348,7 +348,7 @@ strong {
   line-height: 25px;
   letter-spacing: 0.05em;
 }
-
+/* Resume content */
 .resume {
   width: 1058px;
   margin-top: 30px;
@@ -391,6 +391,10 @@ strong {
   color: var(--background-orange);
   font-weight: 700;
 }
+
+/* Discussion content */
+
+
 
 footer {
   height: 170px;

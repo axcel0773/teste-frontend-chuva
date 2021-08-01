@@ -175,10 +175,11 @@ nav a:hover {
 /* Right Sidebar box icons*/
 .btn-right-side {
   display: flex;
-
   flex-direction: row;
   flex-wrap: nowrap;
+
   justify-content: space-between;
+
   align-items: center;
   align-content: space-around;
 }
@@ -381,7 +382,9 @@ strong {
   line-height: 25px;
 }
 
-.resume-color {
+.resume-txt {
+  padding: 5px 10px;
+
   font: 400 14px var(--title-font-side);
   color: var(--title-resume-txt);
 }
@@ -393,8 +396,83 @@ strong {
 }
 
 /* Discussion content */
+.discussion {
+  width: 1058px;
+  margin-top: 30px;
+  min-height: 30px;
+
+  border: 1px solid #ececec;
+  box-sizing: border-box;
+  border-radius: 3px 3px;
+}
+
+.discussion-header {
+  width: 1058px;
+  height: 45px;
+
+  background: var(--background-sidemenu);
+
+  border: 1px solid #ececec;
+  border-radius: 3px 3px 0px 0px;
+  box-sizing: border-box;
+}
+
+.discussion-title {
+  display: flex;
+
+  padding: 8px 9px;
+  align-items: center;
+
+  font: 500 20px var(--title-font);
+  color: var(--title-resume-box);
+  line-height: 25px;
+}
+
+.discussion-subtitle {
+  display:flex;
+  margin-top: 15px;
+
+  justify-content: center;
+
+  font: 700 18px var(--title-font);
+  color: var(--title-orange);
+}
+
+.btn-discussion {
+  display: flex;
+
+  justify-content: center;
+}
+
+.btn-discussion i {
+  padding: 20px;
+}
+
+.discussion .discussion-txt {
+  display: flex;
+
+  justify-content: center;
 
 
+  font: 400 14px var(--title-font-side);
+  color: #595959;
+  line-height: 19px;
+}
+
+.btn-topic {
+  display: flex;
+
+  justify-content: center;
+
+  background: var(--sidemenu-color-gradient);
+
+  font: 700 15px var(--title-font-side);
+  color: white;
+
+  border-style: none;
+  border-radius: 4px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+}
 
 footer {
   height: 170px;

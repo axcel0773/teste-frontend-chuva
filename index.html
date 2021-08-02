@@ -36,16 +36,13 @@
             alt="icone globo mundial no seletor de linguagem"
           />
           <span class="header-language-text"> PT, BR </span>
-          <img
-            src="assets/dropdown.svg"
-            alt="icone dropdown"
-            />
+          <img src="assets/dropdown.svg" alt="icone dropdown" />
         </div>
         <!--Header user-->
         <div class="header-user">
           <div class="header-user-info">
-            <p> Bem vindo!</p>
-            <p> alguem12@galoascience.com </p>
+            <p>Bem vindo!</p>
+            <p>alguem12@galoascience.com</p>
             <div class="header-user-profile">
               <img
                 src="assets/profile-image.svg"
@@ -85,8 +82,28 @@
           leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque
           sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum.
           Etiam aliquam dictum nisl, vel aliquet enim accumsan sit ametl Lorem
-          <span id="btnOpen" class="open-resume">ver mais</span>
+          <span id="btnOpen" onclick="open()" class="open-resume"
+            >ver mais</span
+          >
         </p>
+        <div id="hiddenResume" class="hidden-resume">
+          <p>
+            lorem ipsum dolor sit amet, consectet Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Ipsum accusamus inventore quae. Sed
+            aut et saepe quam unde ex. Voluptate, exercitationem numquam
+            voluptates repellendus ea incidunt sapiente? Non, ipsum est. Impedit
+            perferendis aut officia id sed voluptates, architecto delectus non
+            molestias! Reprehenderit reiciendis eius quod similique animi
+            voluptatum laboriosam blanditiis quos iure eveniet, molestiae
+            repellat consequuntur cupiditate possimus voluptates quidem.
+            Tempora, harum corporis aut temporibus, ad at culpa provident iste
+            aperiam impedit accusamus asperiores vitae id iusto maxime itaque?
+            Asperiores est error suscipit eligendi tempora quia ullam ipsum.
+            Optio, quibusdam. Similique, autem qum eius iure modi mollitia ex!
+            Animi voluptas perferendis, adipisci a nulla dolorem eius aliquid id
+            mollitia, quis libero iusto ex culpa soluta nesciunt.
+          </p>
+        </div>
       </div>
       <!--Discussion box-->
       <div class="discussion">
@@ -111,7 +128,7 @@
           Sabia que o maior estímulo no desenvolvimento científico e cultural é
           a curiosidade? Deixe seus questionamentos ou sugestões para o autor!
         </p>
-        <button class="btn-topic">+ criar tópico</button>
+        <button id="btnSee" class="btn-topic">+ criar tópico</button>
         <!--Questions box 1-->
         <div class="question1">
           <div class="question-subject">

@@ -1,5 +1,10 @@
-//Listen click of the button to open the resume
-let btnOpen = document.querySelector('#btnOpen');
-let span = document.getElementById('#btnOpen');
+//Click of the button to open the resume
+function open() {
+    var btnMore = document.getElementById('#hiddenResume');
 
-btnOpen.onclick
+    if (btnMore.style.display === "none") {
+        btnMore.style.display = "block";
+    } else {
+        btnMore.display = "none";
+    }
+};

@@ -422,6 +422,10 @@ strong {
   cursor: pointer;
 }
 
+.hidden-resume {
+  display: none;
+}
+
 /* Discussion content */
 .discussion {
   width: 1058px;
